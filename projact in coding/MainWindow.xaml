@@ -1,0 +1,60 @@
+﻿<Window x:Class="projact_in_coding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:projact_in_coding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="401*"/>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="133*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="maliy" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="Flags" VerticalAlignment="Top" Width="399" Height="141"  FontSize="72" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontFamily="Segoe Script" BorderBrush="#FFEEF1F9" Margin="0,4,0,0" Grid.RowSpan="2" IsEnabled="False">
+            <TextBox.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0004FF" Offset="0"/>
+                    <GradientStop Color="#FF50EA8A" Offset="0.8"/>
+                    <GradientStop Color="#FF00FFF9" Offset="0.4"/>
+                </LinearGradientBrush>
+            </TextBox.Foreground>
+        </TextBox>
+        <TextBox x:Name="selection" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" Margin="0,74,0,0" TextWrapping="Wrap" Text="select" VerticalAlignment="Top" Width="120" FontSize="18" FontWeight="Bold" FontFamily="Stencil" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" IsEnabled="False" Height="46"/>
+        <StackPanel Grid.Row="1" Grid.Column="3" Orientation="Vertical">
+            <Button x:Name="italyBtn" Height="50" Content="Italy" FontSize="18" Margin="10" Click="italyBtn_Click"/>
+            <Button x:Name="franceBtn" Height="50" Content="France" FontSize="18" Margin="10" Click="franceBtn_Click"/>
+            <Button x:Name="belgiumBtn" Height="50" Content="Belgium" FontSize="18" Margin="10" Click="belgiumBtn_Click"/>
+        </StackPanel>
+        <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" Margin="30,30,30,30">
+            <Grid Height="223" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Rectangle Grid.Column="0" x:Name="rec1"/>
+                <Rectangle Grid.Column="1" x:Name="rec2"/>
+                <Rectangle Grid.Column="2" x:Name="rec3"/>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" Margin="30,30,30,30">
+            <Grid Height="223" VerticalAlignment="Top">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Rectangle Grid.Row="0" x:Name="rec4"/>
+                <Rectangle Grid.Row="1" x:Name="rec5"/>
+                <Rectangle Grid.Row="2" x:Name="rec6"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>
