@@ -50,18 +50,20 @@ namespace projact_in_coding
 
         private void contrycbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           switch (selecteditem.content.tostring().ToLower())
+           switch (this.Content.ToString().ToLower() )
             {
                 case "italy":
-
+                    this.rec1.Fill = new SolidColorBrush(Colors.Green);
+                    this.rec2.Fill = new SolidColorBrush(Colors.White);
+                    this.rec3.Fill = new SolidColorBrush(Colors.Red);
 
                     break;
 
 
                 case "france":
+                    franceBtn_Click(sender, e);
 
 
-                    
                     break;
             }
         }
