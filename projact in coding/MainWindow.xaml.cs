@@ -47,5 +47,23 @@ namespace projact_in_coding
             this.rec3.Fill = new SolidColorBrush(Colors.Red);
 
         }
+
+        private void contrycbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           switch (selecteditem.content.tostring().ToLower())
+            {
+                case "italy":
+
+
+                    break;
+
+
+                case "france":
+
+
+                    
+                    break;
+            }
+        }
     }
 }
