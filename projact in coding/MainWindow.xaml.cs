@@ -71,12 +71,46 @@ namespace projact_in_coding
 
         }
 
+        private void germany_Click()
+        {
+            this.Row1.Fill = new SolidColorBrush(Colors.Black);
+            this.Row2.Fill = new SolidColorBrush(Colors.Red);
+            this.Row3.Fill = new SolidColorBrush(Colors.Yellow);
+
+        }
+
+        private void austria_Click()
+        {
+            this.Row1.Fill = new SolidColorBrush(Colors.Red);
+            this.Row2.Fill = new SolidColorBrush(Colors.White);
+            this.Row3.Fill = new SolidColorBrush(Colors.Red);
+
+        }
+
+        private void bolivia_Click()
+        {
+            this.Row1.Fill = new SolidColorBrush(Colors.Red);
+            this.Row2.Fill = new SolidColorBrush(Colors.Yellow);
+            this.Row3.Fill = new SolidColorBrush(Colors.Green);
+
+        }
+
+
+
         private void horizontalFlag()
         {
             this.HorizontalBox.Visibility = Visibility.Collapsed;
             this.VerticalBox.Visibility = Visibility.Visible;
 
         }
+
+        private void verticalFlag()
+        {
+            this.HorizontalBox.Visibility = Visibility.Visible;
+            this.VerticalBox.Visibility = Visibility.Collapsed;
+        }
+
+        
 
         private void contrycbox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -103,18 +137,19 @@ namespace projact_in_coding
 
                     break;
                 case "germany":
-
+                    verticalFlag();
+                    germany_Click();
 
 
                     break;
                 case "austria":
-
-
+                    verticalFlag();
+                    austria_Click();
 
                     break;
                 case "bolivia":
-
-
+                    verticalFlag();
+                    bolivia_Click();
 
                     break;
 
