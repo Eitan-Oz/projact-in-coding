@@ -31,8 +31,16 @@
             <Button x:Name="italyBtn" Height="50" Content="Italy" FontSize="18" Margin="10" Click="italyBtn_Click"/>
             <Button x:Name="franceBtn" Height="50" Content="France" FontSize="18" Margin="10" Click="franceBtn_Click"/>
             <Button x:Name="belgiumBtn" Height="50" Content="Belgium" FontSize="18" Margin="10" Click="belgiumBtn_Click"/>
+            <ComboBox x:Name="contrycbox" Grid.Row="1" Grid.Column="3" Height="40" VerticalAlignment="Top" Margin="20" SelectionChanged="contrycbox_SelectionChanged">
+                <ComboBoxItem Content="Italy"/>
+                <ComboBoxItem Content="France"/>
+                <ComboBoxItem Content="Belgium"/>
+                <ComboBoxItem Content="Germany"/>
+                <ComboBoxItem Content="Austria"/>
+                <ComboBoxItem Content="Bolivia"/>
+            </ComboBox>
         </StackPanel>
-        <Border x:Name="unit1" BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" Margin="30,30,30,30">
+        <Border x:Name="border1" BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" Margin="30,30,30,30">
             <Grid Height="223" VerticalAlignment="Top">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
@@ -44,7 +52,7 @@
                 <Rectangle Grid.Column="2" x:Name="rec3"/>
             </Grid>
         </Border>
-        <Border x:Name="unit2" BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" Margin="30,30,30,30">
+        <Border x:Name="border2" BorderBrush="Black" BorderThickness="3" Grid.Row="1" Grid.Column="1" Margin="30,30,30,30">
             <Grid Height="223" VerticalAlignment="Top">
                 <Grid.RowDefinitions>
                     <RowDefinition/>
